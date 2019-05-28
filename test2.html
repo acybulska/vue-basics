@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
@@ -16,34 +17,34 @@
             Coordinates: {{x}} / {{y}}
             <span v-on:mousemove.stop.prevent="">DEAD SPOT</span> <!-- Stop propagation -->
         </p>
+        <input type="text" v-on:keyup.enter="alertMe">
     </div>
-    <input type="text" v-on:keyup.enter="alertMe">
-</body>
-<script src="https://cdn.jsdelivr.net/npm/vue"></script>
-<script>
-    new Vue({
-        el: '#app',
-        data: {
-            counter: 0,
-            x: 0,
-            y: 0
-        },
-        methods: {
-            increase: function (step, event) {
-                this.counter += step;
+
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                counter: 0,
+                x: 0,
+                y: 0
             },
-            updateCoordinates: function (event) {
-                this.x = event.clientX;
-                this.y = event.clientY;
-            },
-            dummy: function (event) {
-                event.stopPropagation();
-            },
-            alertMe: function () {
-                alert('Alert');
+            methods: {
+                increase: function (step, event) {
+                    this.counter += step;
+                },
+                updateCoordinates: function (event) {
+                    this.x = event.clientX;
+                    this.y = event.clientY;
+                },
+                dummy: function (event) {
+                    event.stopPropagation();
+                },
+                alertMe: function () {
+                    alert('Alert');
+                }
             }
-        }
-    });
-</script>
+        });
+    </script>
+</body>
 
 </html>
