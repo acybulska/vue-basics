@@ -17,11 +17,11 @@
 </template>
 
 <script>
-import Server from './Server.vue';
-import Footer from './Footer.vue';
-import ServerDetails from './ServerDetails.vue';
-import Header from './Header.vue';
-import ServerList from './ServerList.vue';
+import Server from './Components/Server.vue';
+import Footer from './Components/Footer.vue';
+import ServerDetails from './Components/ServerDetails.vue';
+import Header from './Components/Header.vue';
+import ServerList from './Components/ServerList.vue';
 
 export default {
     components: {
