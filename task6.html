@@ -10,26 +10,39 @@
   <body>
     <div id="app">
       <my-cpn></my-cpn>
-      <hr>
+      <hr />
+      <my-cpn></my-cpn>
+    </div>
+    <div id="app2">
+      <my-cpn></my-cpn>
+      <hr />
       <my-cpn></my-cpn>
     </div>
     <script>
-      Vue.component("my-cpn", {
+      var cpn = {
         data: function() {
           return {
             status: "Critical"
           };
         },
-        template: '<p>Server Status: {{ status }} (<button @click="changeStatus">Change</button>)</p>',
+        template:
+          '<p>Server Status: {{ status }} (<button @click="changeStatus">Change</button>)</p>',
         methods: {
-            changeStatus: function() {
-                this.status = 'Normal'
-            }
-        },
+          changeStatus: function() {
+            this.status = "Normal";
+          }
+        }
+      };
+
+      new Vue({
+        el: "#app",
+        components: {
+          "my-cpn": cpn
+        }
       });
 
       new Vue({
-        el: "#app"
+        el: "#app2"
       });
     </script>
   </body>
