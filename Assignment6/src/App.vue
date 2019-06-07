@@ -1,16 +1,16 @@
 <template>
     <div class="container">
         <div class="row">
-           <Header/>
+           <app-header/>
         </div>
         <hr>
         <div class="row">
-            <ServerList/>
-            <ServerDetails/>
+            <server-list/>
+            <server-details/>
         </div>
         <hr>
         <div class="row">
-                <Footer/>
+                <app-footer/>
             </div>
         </div>
     </div>
@@ -25,11 +25,11 @@ import ServerList from './ServerList.vue';
 
 export default {
     components: {
-        'Server': Server,
-        'Footer': Footer,
-        'ServerDetails': ServerDetails,
-        'Header': Header,
-        'ServerList': ServerList
+        'server': Server,
+        'app-footer': Footer,
+        'server-details': ServerDetails,
+        'app-header': Header,
+        'server-list': ServerList
     }
 }
 </script>
