@@ -24,7 +24,6 @@ import ServerList from './Components/ServerList.vue';
 
 export default {
     components: {
-        'server': Server,
         'app-footer': Footer,
         'server-details': ServerDetails,
         'app-header': Header,
