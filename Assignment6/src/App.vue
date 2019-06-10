@@ -17,7 +17,6 @@
 </template>
 
 <script>
-import Server from './Components/Server.vue';
 import Footer from './Components/Footer.vue';
 import ServerDetails from './Components/ServerDetails.vue';
 import Header from './Components/Header.vue';
