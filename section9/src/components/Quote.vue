@@ -5,8 +5,8 @@
             <span style="color: #ccc"><slot name="subtitle">The Subtitle</slot></span>
         </div>
         <hr>
-        <div>
-            <slot name="content"></slot>
+        <div> 
+            <slot name="content">Default content</slot>
         </div>
     </div>
 </template>
