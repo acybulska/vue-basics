@@ -1,4 +1,6 @@
 <template>
+  <div class="container">
+  <div class="col-md-12">
   <div id="app">
     <button @click="selectedComponent='appQuote'">Quote</button>
     <button @click="selectedComponent='appAuthor'">Author</button>
@@ -10,6 +12,8 @@
       <h1 slot="title">{{quoteTitle}}</h1>
       <p slot="content">A wonderful quote</p>
     </app-quote>-->
+  </div>
+  </div>
   </div>
 </template>
 
