@@ -1,8 +1,8 @@
 <template>
   <div id="app">
     <app-quote :quote="'A wonderful quote!'">
-      <h1>{{quoteTitle}}</h1>
-      <p>A wonderful quote</p>
+      <h1 slot="title">{{quoteTitle}}</h1>
+      <p slot="content">A wonderful quote</p>
     </app-quote>
   </div>
 </template>
