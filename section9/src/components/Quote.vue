@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>{{quote}}</p>
+       <slot></slot>
     </div>
 </template>
 
@@ -17,5 +17,9 @@ div {
     margin: 30px auto;
     padding: 30px;
     text-align: center;
+}
+
+h1 {
+    color: red;
 }
 </style>
